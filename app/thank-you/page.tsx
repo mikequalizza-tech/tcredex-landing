@@ -1,3 +1,10 @@
+useEffect(() => {
+  if (window.gtag) {
+    window.gtag('event', 'preregistration_submitted', {
+      page: 'thank-you'
+    })
+  }
+}, [])
 import Link from 'next/link'
 
 export default function ThankYou() {
